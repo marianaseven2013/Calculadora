@@ -1,0 +1,50 @@
+:root {
+    --color1:  rgb(164, 202, 196);
+    --color11: rgb(0, 0, 0);
+    --color111: rgb(153, 224, 163);   
+ }
+
+ main {
+    width: 400px;
+    height: 500px;
+    background-color: var(--color1);
+
+    margin: auto;
+    margin-top: 100px;
+    padding: 20px;
+
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr 460px;
+ }
+
+ .pantalla {
+    font-size: 50px;
+    font-weight: 600;
+    text-align: right;
+ }
+ 
+    .teclado {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: repeat(5,84.5px);
+        gap: 10px;
+        
+ }
+ .tecla {
+    font-size: 35px;
+    font-size: 900;
+    color: var(--color11);
+    background-color: aqua;
+
+    border-radius: 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+.tecla0{
+    grid-column: 1;
+    grid-column-end: 3;
+
+}
